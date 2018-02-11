@@ -1,0 +1,20 @@
+{
+    "name": "galatar/framekenstein",
+    "description": "Mi monstruosa creación",
+    "type": "framework",
+    "autoload": {
+        "psr-4": {
+            "Galatar\\Framekenstein\\": "src"
+        }
+    },
+    "require": {
+        "twig/twig": "^2.4"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Juanan Ruiz",
+            "email": "juanan@us.es"
+        }
+    ]
+}

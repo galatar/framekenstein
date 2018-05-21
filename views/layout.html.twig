@@ -3,10 +3,15 @@
 <head>
     <meta charset="utf-8">
     <title>Framekenstein</title>
+    <link rel="stylesheet" href="css/frame.css">
 </head>
 <body>
-{% block contenido %}
-{% endblock %}
-<p>Este párrafo está en la plantilla principal</p>
+<div class="header">
+    <h1><a href="/index.php">Framekenstein</a></h1>
+</div>
+<div class="contenido">
+    {% block contenido %}
+    {% endblock %}
+</div>
 </body>
 </html>

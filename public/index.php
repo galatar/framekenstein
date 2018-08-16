@@ -11,7 +11,6 @@ $twig = new Twig_Environment($twig_loader, array('cache' => '../cache/twig',));
 
 //$twig->display('saludo.html.twig');
 
-// http://localhost:8080/index.php?p=saludo
 
 //$pagina = $_GET['p'] . '.html.twig';
 //$html = $twig->render($pagina);

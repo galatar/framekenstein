@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}Probando la herencia en Twig{% endblock %}</title>
+    <link rel="stylesheet" href="css/frame.css">
+</head>
+<body>
+<header class="header">
+    <h1><a href="/index.php">Framekenstein</a></h1>
+</header>
+<main class="main">
+    <div class="sidebar">
+        {% block barra_lateral %}
+            <a href="index.php?p=inicio">Inicio</a>
+            <a href="index.php?p=blog">Blog</a>
+            <a href="index.php?p=herencia/tienda/ofertas">Tienda</a>
+        {% endblock %}
+    </div>
+    <div class="main-content">
+        <h2>{{ block('title') }}</h2>
+        {% block contenido %}{% endblock %}
+    </div>
+</main>
+<footer class="footer">
+    {% block footer %}{% endblock %}
+</footer>
+</body>
+</html>

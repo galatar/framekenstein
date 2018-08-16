@@ -1,0 +1,14 @@
+{% extends 'herencia/base.html.twig' %}
+
+{% block title %}Bienvenido a la Tienda de Twig{% endblock %}
+
+{% block barra_lateral %}
+    <a href="index.php?p=herencia/tienda/ofertas">¡Ofertas!</a>
+    <a href="index.php?p=herencia/tienda/peluches">Peluches</a>
+    <a href="index.php?p=herencia/tienda/camisetas">Camisetas</a>
+    <a href="index.php?p=herencia/tienda/posters">Posters</a>
+{% endblock %}
+
+{% block footer %}
+    <p>Todos los artículos que se venden en la tienda son 100% ecológicos</p>
+{% endblock %}

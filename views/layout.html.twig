@@ -6,12 +6,17 @@
     <link rel="stylesheet" href="css/frame.css">
 </head>
 <body>
-<div class="header">
+<header class="header">
     <h1><a href="/index.php">Framekenstein</a></h1>
-</div>
-<div class="contenido">
-    {% block contenido %}
-    {% endblock %}
-</div>
+</header>
+<main class="main">
+    <div class="main-content">
+        {% block contenido %}
+        {% endblock %}
+    </div>
+</main>
+<footer class="footer">
+    Made with Framework Framekenstein · <a href="index.php?p=herencia/inicio">Herencia</a>
+</footer>
 </body>
 </html>
